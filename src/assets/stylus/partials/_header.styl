@@ -1,0 +1,58 @@
+#header
+  width:100%
+  height:345px
+  padding:60px 0
+  position:relative
+  background:darkblue
+  background: linear-gradient(to right, lightblue 0%, darkblue 100%)
+  .navigation
+    position:absolute
+    right:66px
+    top:30px
+    ul
+      list-style:none
+      li
+        display:inline-block
+        a
+          font-size:1em
+          color:white
+          font-weight:700
+          margin:0 10px
+          text-decoration:none
+          transition:.2s
+          padding:.5em 1em
+          &:hover
+            border-bottom:1px solid white
+  .inner-content
+    width:50%
+    position:absolute
+    z-index:1
+    top:50%
+    left:50%
+    transform:translate(-50%,-50%)
+    text-align:center
+    color:white
+    a
+      color:white
+    .social-icons
+      margin:20px auto 0
+      width:125px
+      height:20px
+      a
+        width:20px
+        height:20px
+        float:left
+        margin-right:15px
+        opacity:.9
+        &:last-child
+          margin-right:0
+        &:hover
+          transform:scale(1.2) rotate(360deg)
+          opacity:1
+    .header-img
+      width:130px
+      margin:0 auto
+      img
+        border-radius:50%
+        width:100%
+        filter: grayscale(100%)

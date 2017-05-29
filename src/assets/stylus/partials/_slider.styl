@@ -1,0 +1,88 @@
+#slider
+  max-width:80%
+  margin:0 auto
+  display:block
+  height:auto
+  position:relative
+  &:after
+    content:''
+    display:block
+    clear:both
+  input[type='radio']
+    display:none
+  #slides
+    overflow:hidden
+    box-shadow:0 12px 20px rgba(0,0,0,0.4)
+    background:lightblue
+    margin:0 0 20px 0
+    .inner
+      -webkit-transform:translateZ(0)
+      -moz-transform:translateZ(0)
+      -o-transform:translateZ(0)
+      -ms-transform:translateZ(0)
+      transform:translateZ(0)
+
+      -webkit-transition:all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000)
+      -moz-transition:all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000)
+      -o-transition:all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000)
+      -ms-transition:all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000)
+      transition:all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000)
+
+      -webkit-transition-timing-function:cubic-bezier(0.770, 0.000, 0.175, 1.000)
+      -moz-transition-timing-function:cubic-bezier(0.770, 0.000, 0.175, 1.000)
+      -o-transition-timing-function:cubic-bezier(0.770, 0.000, 0.175, 1.000)
+      -ms-transition-timing-function:cubic-bezier(0.770, 0.000, 0.175, 1.000)
+      transition-timing-function:cubic-bezier(0.770, 0.000, 0.175, 1.000)
+      article
+        float:left
+        width:100%
+        .image-container
+          width:100%
+          margin:0 auto
+          display:block
+
+  .labels
+    margin:20px auto
+    text-align:center
+    .label
+      background:darkblue
+      display:inline-block
+      cursor:pointer
+      width:30px
+      height:30px
+      line-height:30px
+      text-align:center
+      color:white
+      margin:0 15px 0 0
+      transition:300ms all ease
+      box-shadow:0 5px 10px rgba(0,0,0,0.2)
+      &:last-child
+        margin:0
+      &.active
+        background:lightblue
+      &:hover
+        background:blue
+
+  .navigation
+    .navItem
+      position:absolute
+      top:45%
+      transform:translateY(-50%)
+      color:red
+      z-index:2
+      background:grey
+      color:white
+      font-size:1em
+      width:40px
+      height:40px
+      text-align:center
+      .fa-icon
+        margin-top:8.5px
+      &.prev
+        left:-40px
+      &.next
+        right:-40px
+      &:hover
+        background:blue
+      &:active
+        background:darkblue

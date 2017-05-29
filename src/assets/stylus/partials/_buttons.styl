@@ -1,0 +1,39 @@
+.btn
+  display:inline-block
+  text-decoration:none
+  padding:10px 30px
+  background:darkblue
+  color:white
+  border:2px solid darkblue
+  line-height:1em
+  position:relative
+  text-transform:uppercase
+  box-shadow:0 4px 13px rgba(0,0,0,0.4)
+  font-weight:600
+  transition:200ms ease
+  &:hover
+    background:blue
+    border-color:blue
+  &:active
+    background:lighterblue
+    border-color:lighterblue
+  .icon
+    margin:0 0 0 5px
+  &.inverted
+    border:2px solid darkblue
+    background:transparent
+    color:darkblue
+    &:hover
+      background:blue
+      border-color:blue
+      color:white
+    &:active
+      background:lighterblue
+      border-color:lighterblue
+
+.buttons
+  height:auto
+  &:after
+    content:''
+    clear:both
+    display:block

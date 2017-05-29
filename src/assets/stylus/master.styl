@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,300,700')
+
+white = #fafafa
+lighterblue = #2F4254
+lightblue = #3d566e
+darkblue = #2c3e50
+blue = #1e2a36
+transparentBlue = rgba(44, 62, 80, 0.85)
+grey = #646464
+
+*
+  margin:0
+  padding:0
+  box-sizing:border-box
+  -webkit-font-smoothing: antialiased
+
+body
+  margin:0
+  padding:0
+  font-family: 'Open Sans', sans-serif
+  font-size:14px
+  background:white
+  color:darkblue
+
+img
+  width:100%
+
+a
+  color:inherit
+  cursor:pointer
+  transition:300ms all ease
+
+.container
+  z-index:2
+  background:white
+  position:relative
+  width: 85%
+  max-width: 1200px
+  margin: 0 auto
+  padding:20px 0
+
+p
+  font-size:1.2em
+  font-weight:300
+  letter-spacing:.6px
+
+/*********IMPORT PARTIALS*******/
+@import './partials/_header.styl'
+@import './partials/_footer.styl'
+@import './partials/_portfolio.styl'
+@import './partials/_about.styl'
+@import './partials/_titles.styl'
+@import './partials/_slider.styl'
+@import './partials/_moreInfo.styl'
+@import './partials/_role.styl'
+@import './partials/_buttons.styl'
+@import './partials/_contact.styl'
+@import './partials/_mobile.styl'

@@ -1,0 +1,173 @@
+{
+  "about": {
+    "title": "Over mij",
+    "subTitle": "Gedreven, Sociaal, Nieuwsgierig",
+    "story": "Ik ben Noud, 19 jaar oud en gedreven in wat ik doe & wil.<br/> Ik ben begonnen met de opleiding Interactief Vormgeven omdat ik van het Mediacollege mee kreeg dat je daar websites maakt.<br/><br/>Ik ben van het begin af aan al geintreseerd in code en hoe je door iets te schrijven op je computer iets kan laten gebeuren, dit fascineerd mij erg. <br/>Ik kwam er al gauw achter dat ik toch echt de 'development' kant op wil. Ik ben daarom in mijn vrije tijd veel bezig met het uitbreiden van mijn kennis van code om hier dan ook echt mee verder te gaan.",
+    "img": "http://werk.noudadrichem.com/cdn/code.png"
+  },
+
+  "portfolio": [{
+      "slug": "bannerwise-ebook-pages",
+      "name": "Bannerwise ebook pages",
+      "work": "Ontwikkeling van een pagina voor ebooks",
+      "role": "Front-end Development",
+      "story": "Bannerwise wilde graag een pagina en een cms waarin zij ebooks kunnen uploaden en deze kunnen weergeven in een overview en in 'single book pages'. Als klanten hun email, naam & bedrijfsnaam invullen ontvangen zij in de mail een download link. Achter deze pagina's zit ook een cms waarin medewerkers van Bannerwise kunnen inloggen, nieuwe boeken kunnen toevoegen en kunnen zien wie welk ebook heeft gedownload.",
+      "background": "http://werk.noudadrichem.com/cdn/werk/mockup-ebookpage.png",
+      "imgs": ["http://werk.noudadrichem.com/cdn/bannerwise/ebooks/desktop-screen-analytics.png", "http://werk.noudadrichem.com/cdn/bannerwise/ebooks/mobile-screen.png"],
+      "roles": ["Design", "Ontwikkeling"],
+      "fors": ["Brandspots", "Mediacollege"],
+      "links": [
+        {
+          "href": "",
+          "name": ""
+        }
+      ]
+    },
+    {
+      "slug": "bannerwise-faq",
+      "name": "Bannerwise FAQ",
+      "work": "FAQ pagina voor Bannerwise",
+      "role": "Ontwerp & Ontwikkeling",
+      "background": "http://werk.noudadrichem.com/cdn/werk/mockup-support-bannerwise.png",
+      "story": "Dit is een support pagina die is ontwikkeld voor  Bannerwise. Deze pagina bevat een getting started page, een FAQ page & meerdere guides/videos. Ik heb voor dit project het design, visuals & de ontwikkeling uitgevoerd.",
+      "imgs": ["http://werk.noudadrichem.com/cdn/bannerwise/faq/flow.png", "http://werk.noudadrichem.com/cdn/bannerwise/faq/faq.png", "http://werk.noudadrichem.com/cdn/bannerwise/faq/video.png"],
+      "roles": ["Ontwikkeling", "Interface design", "Visuals"],
+      "fors": ["Bannerwise"],
+      "links": [
+        {
+          "href": "https://help.bannerwise.io",
+          "name": "help.bannerwise.io"
+        }
+      ]
+
+    },
+    {
+      "slug": "bannerwise-integration-pages",
+      "name": "Bannerwise Integrations",
+      "work": "Ontwikkeling dynamische pagina's voor netwerk integraties",
+      "role": "Ontwikkeling",
+      "background": "http://werk.noudadrichem.com/cdn/werk/mockup-connection-bannerwise.png",
+      "story": "Voor de bekendmaking van een nieuwe feature van Bannerwise (direct integrations) heb ik 3 pagina's ontwikkeld. Deze laten zien wat je allemaal kan met Bannerwise en wat de meerwaarde is van deze directe integraties. Dit is een dynamische pagina die op URL de content verwisseld, dus /adwords geeft informatie voor Google Adwords maar als je /adform gebruikt zie je informatie over Adform. Toen ik aan dit projectje begon ben ik nog maar net begonnen met mijzelf verdiepen in Javascript, het was voor mij voornamelijk een leerzaam project.",
+      "imgs": ["http://werk.noudadrichem.com/cdn/bannerwise/integrations/screenshot-1.png", "http://werk.noudadrichem.com/cdn/bannerwise/integrations/screenshot-2.png"],
+      "roles": ["Ontwikkeling"],
+      "fors": ["Bannerwise"],
+      "links": [
+        {
+          "href": "https://bannerwise.io/adwords",
+          "name": "Adwords"
+        }, {
+          "href": "https://bannerwise.io/adform",
+          "name": "Adform"
+        }, {
+          "href": "https://bannerwise.io/doubleclick",
+          "name": "Doubleclick"
+        }
+      ]
+    },
+    {
+      "slug": "banners-disney",
+      "name": "Bannerset voor disney",
+      "work": "Ontwikkeling van de animaties",
+      "role": "Ontwikkeling",
+      "background": "http://werk.noudadrichem.com/cdn/werk/mockup-disneybanners.png",
+      "story": "Ik heb samen met <a href='http://kevendekoning.nl'>Keven</a> voor disney een bannerset ontwikkeld. Keven heeft het design gemaakt en hebben samen gebrainstormd met wat eventuele mogelijkheden zijn. Ikzelf heb de ontwikkeling van de animaties uitgoeverd met een library genaamd <a href='https://greensock.com/'>greensock</a>. Dit is een javascript library waarin je zelf kan bepalen wat hoe moet bewegen, ik vond dit erg leuk en leerzaam.",
+      "imgs": ["http://werk.noudadrichem.com/cdn/bannerwise/disneybanners/disneybanner-1.png"],
+      "roles": ["Ontwikkeling"],
+      "fors": ["Bannerwise"],
+      "links": [
+        {
+          "href": "http://werk.noudadrichem.com/cdn/bannerwise/disneybanners/",
+          "name": "Bannerset"
+        }
+      ]
+    },
+    {
+      "slug": "exactt",
+      "name": "Exactt",
+      "work": "Rebuild van de oude web pagina",
+      "role": "Ontwerp & Ontwikkeling",
+      "background": "http://werk.noudadrichem.com/cdn/werk/mockup-exactt.png",
+      "story": "Exactt is een remake van een al bestaande website, ik heb deze website een nieuwe twist gegeven met een betere call to action en een meer voor de hand liggende navigatie, zo worden de diensten meer belicht. <br/>Creatieve vent die Noud - Marco Riechelman",
+      "imgs": ["http://werk.noudadrichem.com/cdn/exactt/flowchart-exactt.png", "http://werk.noudadrichem.com/cdn/exactt/wireframe-homepage.png", "http://werk.noudadrichem.com/cdn/exactt/wireframe-productpage.png", "http://werk.noudadrichem.com/cdn/exactt/website-exactt-old.png"],
+      "roles": ["Ontwikkeling", "Nieuw Design"],
+      "fors": ["Exactt"],
+      "links": [
+        {
+          "href": "http://exactt.nl/",
+          "name": "exactt.nl"
+        }
+      ]
+    },
+    {
+      "slug": "borduurbedrijfbenf",
+      "name": "Borduurbedrijf B&F",
+      "work": "Rebuild van de oude web pagina",
+      "role": "Design & Development",
+      "story": "Ik ben door borduurbedrijf B&F gevraagd om hun oude pagina opnieuw te ontwikkelen en wat stoerder te maken. De oude pagina had een roze uitstraling en dat vonden de 2 basen wie ook 2 mannen zijn toch net wat te vrouwelijk. Ze vonden een website met een grijze uitstraling gaaf, ikzelf heb ervoor gekozen nog een 'army green' tint aan toe te voegen om toch iets aan kleur toe te voegen.",
+      "background": "http://werk.noudadrichem.com/cdn/werk/mockup-borduurbedrijfbenf.png",
+      "imgs": [],
+      "roles": ["Ontwikkeling", "Nieuw Design"],
+      "fors": ["Borduurbedrijf B & F"],
+      "links": [
+        {
+          "href": "http://borduurbedrijfbenf.nl/",
+          "name": "Borduurbedrijf.nl"
+        }
+      ]
+    },
+    {
+      "slug": "northface-App",
+      "name": "Northface App",
+      "work": "Webshop prototype voor een school project",
+      "role": "Design & Protoyping",
+      "background": "http://werk.noudadrichem.com/cdn/werk/mockup-northface-app.png",
+      "story": "Deze app is een prototype gemaakt voor een excellent project voor het Mediacollege Amsterdam, In samenwerking met Brandspots heb ik samen met mede leerlingen een concept ontwikkeling voor een popup store. Als voorbeeld hebben wij The Northface gebruikt. Wat je hier ziet is een prototype van een 'in store checkout app' zodat bezoekers van de popup store kunnen uitchecken met een eigen app.",
+      "imgs": ["http://werk.noudadrichem.com/cdn/northface-app/presentatie-app.png", "http://werk.noudadrichem.com/cdn/northface-app/code.png", "http://werk.noudadrichem.com/cdn/northface-app/flowchart.png", "http://werk.noudadrichem.com/cdn/northface-app/wireframe.png"],
+      "roles": ["Design", "Ontwikkeling"],
+      "fors": ["Brandspots", "Mediacollege"],
+      "links": [
+        {
+          "href": "http://werk.noudadrichem.com/cdn/northface-app/app/",
+          "name": "App"
+        }, {
+          "href": "http://brandspots.com",
+          "name": "Brandspots"
+        }
+      ]
+    },
+    {
+      "slug": "talent-jcdifferenze",
+      "name": "Jc differenze",
+      "work": "Frontend ontwikkeling parallax",
+      "role": "Ontwikkeling",
+      "background": "http://werk.noudadrichem.com/cdn/werk/mockup-talentdifferenze.png",
+      "story": "Dit is een campagne voor JC-Differenze (Jongerencentrum Differenze), het hoofddoel van deze campagne is dat mensen weten wat Differenze is, en daarbij ook het concept kennen van Differenze. They think differenze. Hierbij hebben wij gebruikt gemaakt van een storytelling voor 2 leeftijden; 10+ en 16+. Dit omdat je jongeren wilt aanspreken maar jongeren hebben ook ouders. Het eind resultaat is een mooie Parallax geworden, Zie voor jezelf!",
+      "imgs": ["http://werk.noudadrichem.com/cdn/talent-differenze/mindmap.png", "http://werk.noudadrichem.com/cdn/talent-differenze/userstory.png"],
+      "roles": ["Ontwikkeling", "Aanspreek punt stakeholders"],
+      "fors": ["Jc Differenze"],
+      "links": [
+        {
+          "href": "http://talent.jcdifferenze.nl/",
+          "name": "talent.jcdifferenze.nl"
+        }
+      ]
+    },
+    {
+      "slug": "remosteps",
+      "name": "Remosteps",
+      "work": "Frontend ontwikkeling voor Remosteps",
+      "role": "Ontwikkeling",
+      "background": "http://werk.noudadrichem.com/cdn/werk/mockup-remosteps.png",
+      "story": "Remosteps is een opdracht voor Bemika software, de opdracht was een informatieve web pagina te maken die de app waar Bemika Software zelf mee bezig is te promoten. Dit gaat een planning/hulp app voor ouderen/jongeren met een beperking. Denk aan Alzheimer, autisme, down syndrome. Dit was een opdracht in een groep van 5 waar ieder zijn eigen taak had.  Ik heb hier voornamelijk Frontend-Development gedaan, dit omdat mijn interesses hier het meest ligt en dit een goede opdracht was om daarvan veel bij te leren. Zie voor jezelf.",
+      "imgs": [],
+      "roles": ["Ontwikkeling"],
+      "fors": ["Remosteps", "Bemika software"],
+      "links": [
+        {
+          "href": "http://werk.noudadrichem.com/cdn/remosteps/site/",
+          "name": "remosteps.nl"
+        }
+      ]
+    }
+  ]
+}
