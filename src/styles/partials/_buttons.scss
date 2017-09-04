@@ -1,0 +1,47 @@
+.btn {
+  display: inline-block;
+  padding: 7px 20px;
+  background: $textColor;
+  color: white;
+  transition: 300ms ease;
+  border: 2px solid $textColor;
+  @include shadow(5px, $textColor, 0.4);
+
+  &:after {
+    display: none;
+  }
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  &:active {
+    transform: translate(5px, 5px);
+    box-shadow: 0 0 0 0 transparent !important;
+  }
+
+  &.default {
+    background: $darkBlue;
+    border: 2px solid $darkBlue;
+    @include shadow(5px, $darkBlue, 0.4);
+  }
+
+  &.white {
+    background: $brokenWhite;
+    border: 2px solid $brokenWhite;
+    color: $darkBlue;
+    @include shadow(5px, $brokenWhite, 0.4);
+  }
+
+  &.inverted.white {
+    border: 2px solid $brokenWhite;
+    background: transparent;
+    color: $brokenWhite;
+    @include shadow(5px, $brokenWhite, 0.4);
+
+    &:hover {
+      background:$brokenWhite;
+      color:$textColor;
+    }
+  }
+}

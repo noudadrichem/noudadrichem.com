@@ -1,0 +1,85 @@
+@import url( 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800');
+@import
+'./partials/variables',
+'./partials/mixins',
+'./partials/header',
+'./partials/loader',
+'./partials/navigation',
+'./partials/portfolioItem',
+'./partials/buttons',
+'./partials/slider',
+'./partials/footer',
+'./partials/lightbox';
+
+body {
+  font-family: $font;
+  font-weight: 400;
+  margin: 0;
+  background-color: $white;
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  a {
+    color: $linkColor;
+    text-decoration: none;
+    position: relative;
+    font-weight: 600;
+
+    &:after {
+      content: '';
+      display: block;
+      background: $linkColor;
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      height: 2px;
+      width: 0;
+      transition: 300ms ease;
+    }
+
+    &:hover:after {
+      width: 100%;
+    }
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  p {
+    font-family: $font;
+    font-size: $fontSize;
+    line-height: 1.62;
+    text-align: left;
+    color: $textColor;
+  }
+
+  .title {
+    color: $textColor;
+    font-weight: 400;
+    font-size: $fontsizeHeading;
+
+    .bold {
+      font-weight: 600;
+      color: $subTextColor;
+    }
+  }
+
+  .subTitle {
+    font-family: $font;
+    color: $subTextColor;
+    font-size: $fontSize;
+    font-weight: 300;
+  }
+
+  .container {
+    width: 100%;
+    max-width: $containerWidth;
+    margin: 0 auto;
+    position: relative;
+  }
+}

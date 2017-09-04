@@ -1,0 +1,89 @@
+#header {
+  $offset: 32px;
+  padding:64px 0 64px 0;
+  background:$white;
+  position: relative;
+  z-index: 1;
+
+
+  .container {
+    &:after {
+      content: '{}';
+      width: 272.5px;
+      height: 299.5px;
+      display: block;
+      position: absolute;
+      top: 110px;
+      left: 0;
+      font-weight: 800;
+      color: $visualColor;
+      font-size: 20em;
+      line-height: 0.74;
+      z-index: 1;
+    }
+  }
+
+  .content {
+    position: relative;
+    z-index: 2;
+
+    .portrait {
+      border-radius: 100%;
+      overflow: hidden;
+      width: 80px;
+      height: 80px;
+      margin: 0 0 $offset;
+      filter: grayscale(100%);
+    }
+
+    .title {
+      margin: 0 0 $offset;
+    }
+
+    .socialIcons {
+      margin: 0 0 $offset;
+
+      a {
+        color: $iconColor;
+        margin-right: 8px;
+        font-size: 20px;
+
+        &:after {
+          display: none;
+        }
+      }
+    }
+
+    .about {
+      width: 619px;
+      height: 174px;
+      font-size: $fontSize;
+      line-height: 1.81;
+      text-align: left;
+      color: $textColor;
+      font-weight: 300;
+    }
+  }
+
+  .cursor {
+    width: 2px;
+    height: 30px;
+    transform: translateY(5px);
+    background: $textColor;
+    display: inline-block;
+    animation: cursorAnimation 1s linear infinite;
+  }
+  @keyframes cursorAnimation {
+    0% {
+      opacity: 1;
+    }
+
+    50% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+#slider {
+  width: 550px;
+  height: 310px;
+  background-color: $grey;
+  position: absolute;
+  z-index: 1;
+  top: 100px;
+  right: 0;
+  overflow: hidden;
+  opacity: 1;
+  filter: grayscale(95%);
+  @include shadow(10px, $textColor, 0.3);
+
+  .slide {
+    position: absolute;
+    max-height: 425px;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 800ms ease-in-out;
+
+    &.show {
+      opacity: 1 !important;
+    }
+  }
+
+  .indicators {
+    position: absolute;
+    top: 500px;
+    left: 0;
+    display: block;
+    height: 20px;
+    width: 100%;
+    text-align: center;
+    z-index: 99999;
+
+    .indicator {
+      display: inline-block;
+      // border-radius:100%;
+      width: 16px;
+      height: 16px;
+      background: $darkBlue;
+      margin: 0 16px 0 0;
+      @include shadow(5px, $lightBlue, 0.4);
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}
