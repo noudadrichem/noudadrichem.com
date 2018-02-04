@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "portfolio website for noudadrichem.com",
+  "author": "noudadrichem <noud.adrichem@hotmail.com>",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@ibm/type": "^0.5.3",
+    "marked": "^0.3.12",
+    "nuxt": "^1.0.0",
+    "simplemde": "^1.11.2"
+  },
+  "devDependencies": {
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.6"
+  }
+}

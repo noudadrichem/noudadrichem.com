@@ -1,0 +1,114 @@
+@import './lib/simple-grid.scss';
+@font-face {
+  font-family: IBMRegular;
+  src: url("/fonts/IBMPlexSans-Regular.otf");
+}
+@font-face {
+  font-family: IBMBold;
+  src: url("/fonts/IBMPlexSans-Bold.otf");
+}
+@font-face {
+  font-family: IBMMedium;
+  src: url("/fonts/IBMPlexSans-Medium.otf");
+}
+@font-face {
+  font-family: IBMSemibold;
+  src: url("/fonts/IBMPlexSans-SemiBold.otf");
+}
+
+::selection {
+  background-color: #3676B5;
+  color: white;
+}
+
+body {
+  font-family: IBMRegular, 'Open Sans', 'Helvetica', sans-serif;
+  font-size: 14px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  font-size: inherit;
+  text-decoration: none;
+  font-family: IBMMedium;
+  position: relative;
+
+  &::selection {
+    background: #007FFF;
+  }
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    transition: 400ms ease-in-out;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: -3px;
+    background-color: white;
+  }
+
+  &:hover:before {
+    width: 100%;
+  }
+}
+
+p {
+  display: block;
+  // color: #FFFFFF;
+  line-height: 26px;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-family: IBMBold, 'Open Sans', sans-serif;
+  font-size: 48px;
+  color: #FFFFFF;
+  @media only screen and (max-width: 780px) {
+    font-size: 32px;
+  }
+}
+
+h2 {
+  font-family: IBMBold;
+  font-size: 32px;
+  color: #3A506B;
+}
+
+span.light {
+  opacity: 0.5;
+}
+
+span.bold {
+  font-family: IBMMedium;
+}
+
+.mt-small {
+  margin-top: 16px;
+}
+
+.mt-mid {
+  margin-top: 24px;
+}
+
+.mt-medium {
+  margin-top: 32px;
+}
+
+.mt-big {
+  margin-top: 64px;
+}
+
+.mt-xl {
+  margin-top: 128px;
+}
