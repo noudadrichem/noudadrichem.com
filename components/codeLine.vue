@@ -77,5 +77,9 @@ export default {
       box-shadow: 0 5px 4px -3px rgba(83, 154, 252, 0.50);
         background-color: rgb(83, 154, 252);
     }
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 </style>

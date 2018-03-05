@@ -30,7 +30,7 @@ export default {
       link: 'http://citylights.xyz'
     }, {
       title: 'Sketch Cleaner',
-      text: 'A plugin for Sketch that helps you get your design files as clean as a whistle. This was a very challenging project for me personally because I did not had a lot of experience in making Sketch plugins.',
+      text: 'A plugin for Sketch that helps you get your design files as clean as a whistle. This was a very challenging project for me personally because I did not had a lot of experience in making Sketch plugins. I wrote a medium post about my experiences, you can read it <a target="_blank" href="https://journal.yummygum.com/4-things-every-first-time-sketch-plugin-developer-should-know-5b4f22efb4a9">here</a>',
       img: '/yummygum/sketch-cleaner/sketch-cleaner@2x.png',
       link: 'http://www.sketchcleaner.com'
     }]

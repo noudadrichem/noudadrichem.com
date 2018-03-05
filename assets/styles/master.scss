@@ -16,6 +16,15 @@
   src: url("/fonts/IBMPlexSans-SemiBold.otf");
 }
 
+$breakpoint-mobile-sm: 321px;
+$breakpoint-mobile-md: 376px;
+$breakpoint-mobile-lg: 414px;
+$breakpoint-tablet-sm: 562px;
+$breakpoint-tablet-md: 768px;
+$breakpoint-desktop-sm: 1120px;
+$breakpoint-desktop-md: 1280px;
+$breakpoint-desktop-lg: 1536px;
+
 ::selection {
   background-color: #3676B5;
   color: white;
@@ -74,8 +83,8 @@ h1 {
   font-family: IBMBold, 'Open Sans', sans-serif;
   font-size: 48px;
   color: #FFFFFF;
-  @media only screen and (max-width: 780px) {
-    font-size: 32px;
+  @media only screen and (max-width: 768px) {
+    font-size: 24px;
   }
 }
 
@@ -83,6 +92,10 @@ h2 {
   font-family: IBMBold;
   font-size: 32px;
   color: #3A506B;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 22px;
+  }
 }
 
 span.light {
@@ -107,6 +120,10 @@ span.bold {
 
 .mt-big {
   margin-top: 64px;
+
+  @media screen and (max-width: 978px) {
+    margin-top: 32px;
+  }
 }
 
 .mt-xl {

@@ -2,7 +2,7 @@
 <div>
   <heading :title="heading.title" :about="heading.about" />
 
-  <div class="container">
+  <div class="container up-on-mobile">
     <itemTile v-for="(item, index) in items" :title="item.title" :text="item.text" :img="item.img" :number="index" :key="index" :link="item.link"/>
   </div>
 </div>
@@ -21,8 +21,8 @@ export default {
     up: 0,
     heading: {
       title: `Hello I\'m Noud Adrichem<span class="light">\\n</span><br/>Web Developer.`,
-      about: `I'm a web developer focused on creating the best experience possible for your website/app. I love being busy writing good code bases for usefull products. Feel free to look at some of my work.
-        <br/><br/>Want to get in touch? Send me a tweet or mail me at: <span class="bold"><a href="mailto:info@noudadrichem.com">info@noudadrichem.com.</a></span>`
+      about: `I'm a developer focused on creating the best experience possible for your website/app. I love being busy writing good code bases for usefull products. Feel free to look at some of my work.
+        <br/><br/>Want to get in touch? Send me a <a href="https://twitter.com/intent/tweet?text=@noudadrichem">tweet</a> or mail me at: <span class="bold"><a href="mailto:info@noudadrichem.com">info@noudadrichem.com.</a></span>`
     },
     items: [{
       title: 'My internship at Yummygum',
@@ -38,3 +38,14 @@ export default {
   })
 }
 </script>
+
+<style lang="scss">
+  .up-on-mobile {
+    transform: translateY(0);
+    position: relative;
+    z-index: 1000;
+    @media screen and (max-width: 768px) {
+      transform: translateY(-106px);
+    }
+  }
+</style>

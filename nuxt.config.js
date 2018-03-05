@@ -17,6 +17,7 @@ module.exports = {
     ]
   },
   loading: { color: '#193959' },
+  plugins: [{ssr: false, src: '~/plugins/logger.js'}]
 }
 
 /*

@@ -36,6 +36,7 @@ export default {
     padding:32px 0 64px;
     background-image: linear-gradient(-124deg, #22293E 0%, #141824 95%);
     min-height: 0;
+    height: 432px;
 
     .bg {
       display: none;
@@ -46,6 +47,9 @@ export default {
     height: 354px;
     min-height: auto;
     padding-top:64px;
+    @media only screen and (max-width: 780px) {
+      height: 304px;
+    }
 
     .bg {
       bottom:0;
@@ -73,6 +77,9 @@ export default {
   p {
     max-width: 469px;
     font-size:16px;
+    @media only screen and (max-width: 768px) {
+      font-size: 14px;
+    }
   }
 }
 </style>
