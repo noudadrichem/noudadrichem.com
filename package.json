@@ -14,8 +14,7 @@
     "browser-bunyan": "^1.2.2",
     "marked": "^0.3.12",
     "nuxt": "^1.0.0",
-    "simplemde": "^1.11.2",
-    "vue-bunyan-logger": "0.0.4"
+    "vue-visible": "^1.0.2"
   },
   "devDependencies": {
     "node-sass": "^4.7.2",

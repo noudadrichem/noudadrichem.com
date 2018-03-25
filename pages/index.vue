@@ -1,9 +1,9 @@
 <template>
 <div>
-  <heading :title="heading.title" :about="heading.about" />
+  <heading :title="heading.title" :about="heading.about" :navItems="navItems"/>
 
   <div class="container up-on-mobile">
-    <itemTile v-for="(item, index) in items" :title="item.title" :text="item.text" :img="item.img" :number="index" :key="index" :link="item.link"/>
+    <itemTile v-for="(item, index) in items" :title="item.title" :text="item.text" :img="item.img" :number="index" :key="index" :link="item.link" :show="item.show"/>
   </div>
 </div>
 </template>
@@ -28,12 +28,21 @@ export default {
       title: 'My internship at Yummygum',
       text: 'I did a 6 months internship at Yummygum in Amsterdam. I learned a lot and have build amazing things. We made Sketchcleaner, a plugin for sketch that keeps your files clean. And City Lights, a beautiful dark theme for Atom, Sublime & Visual Studio Code.',
       img: '/yummygum/photo.jpg',
-      link: '/yummygum'
+      link: '/yummygum',
+      show: false
     }, {
       title: 'My internship at Bannerwise',
       text: 'In my 3rd year of college I had the opportunity to start my internship 6 months earlier. This resulted in a 13 month internship at Bannerwise. It was a great benefit for me personally, my knowledge of code has been drastically improved.',
       img: '/bannerwise/photo.jpg',
-      link: '/bannerwise'
+      link: '/bannerwise',
+      show: false
+    }],
+    navItems: [{
+      text: 'Home',
+      link: 'https://noudadrichem.com'
+    }, {
+      text: 'Contact',
+      link: '/contact'
     }]
   })
 }

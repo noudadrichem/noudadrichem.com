@@ -1,59 +1,71 @@
 <template>
-  <transition>
-    <div class="item-tile mt-big" v-if="(number % 2) === 0">
-      <codeLine width="87px" top="18px" right="auto" left="-42px" zIndex="1"/>
-      <codeLine width="248px" top="70%" right="-48px" left="auto" zIndex="1"/>
-      <codeLine width="168px" top="90%" right="auto" left="-8%" zIndex="3"/>
+  <transition name="fade-in-up">
+    <div v-show="show" class="item-tile mt-big">
+      <div v-if="(number % 2) === 0">
+        <codeLine width="87px" top="18px" right="auto" left="-42px" zIndex="1"/>
+        <codeLine width="248px" top="70%" right="-48px" left="auto" zIndex="1"/>
+        <codeLine width="168px" top="90%" right="auto" left="-8%" zIndex="3"/>
 
-      <div class="row">
-        <div class="col-7">
-          <h2>{{ title }}</h2>
-          <span class="number">0{{ number + 1 }}</span>
-          <p class="item-desc mt-big" v-html="text">
+        <div class="row">
+          <div class="col-7">
+            <h2>{{ title }}</h2>
+            <span class="number">0{{ number + 1 }}</span>
+            <p class="item-desc mt-big" v-html="text">
 
-            <div v-if="link" class="link">
-              <a target="_blank" :href="link">See more...</a>
+              <div v-if="link" class="link">
+                <a :href="link">See more...</a>
+              </div>
+            </p>
+          </div>
+
+          <div class="col-5">
+            <div class="img">
+              <img :src="img" alt="">
             </div>
-          </p>
+          </div>
         </div>
+      </div>
 
-        <div class="col-5">
-          <div class="img">
-            <img :src="img" alt="">
+      <div v-else>
+        <codeLine width="248px" top="84px" right="auto" left="-38px" zIndex="1"/>
+        <codeLine width="168px" top="70%" right="-5%" left="auto" zIndex="3"/>
+
+        <div class="row">
+          <div class="col-5">
+            <div class="img">
+              <img :src="img" alt="">
+            </div>
+          </div>
+
+          <div class="col-7">
+            <h2>{{ title }}</h2>
+            <span class="number">0{{ number + 1 }}</span>
+            <p class="item-desc mt-big" v-html="text">
+
+              <div v-if="link" class="link">
+                <a :href="link">See more...</a>
+              </div>
+            </p>
           </div>
         </div>
       </div>
     </div>
-
-    <div class="item-tile mt-big" v-else>
-      <codeLine width="248px" top="84px" right="auto" left="-38px" zIndex="1"/>
-      <codeLine width="168px" top="70%" right="-5%" left="auto" zIndex="3"/>
-
-      <div class="row">
-        <div class="col-5">
-          <div class="img">
-            <img :src="img" alt="">
-          </div>
-        </div>
-
-        <div class="col-7">
-          <h2>{{ title }}</h2>
-          <span class="number">0{{ number + 1 }}</span>
-          <p class="item-desc mt-big" v-html="text">
-
-            <div v-if="link" class="link">
-              <a target="_blank" :href="link">See more...</a>
-            </div>
-          </p>
-        </div>
-      </div>
-    </div>
-  <transition>
+  </transition>
 </template>
 
 <script>
 import codeLine from './codeLine'
-export default { props: ['title', 'text', 'img', 'number', 'link'], components: {codeLine} }
+export default {
+  props: ['title', 'text', 'img', 'number', 'link', 'show'],
+  components: {
+    codeLine
+  },
+  mounted() {
+    setTimeout(() => {
+      this.show = true
+    }, this.number * 400)
+  }
+}
 </script>
 
 <style lang="scss">
@@ -73,10 +85,6 @@ export default { props: ['title', 'text', 'img', 'number', 'link'], components: 
     h2 {
       font-size: 20px;
     }
-  }
-
-  &:last-child {
-    margin-bottom: 128px;
   }
 
   .row {
@@ -146,4 +154,5 @@ export default { props: ['title', 'text', 'img', 'number', 'link'], components: 
     }
   }
 }
+
 </style>

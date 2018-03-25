@@ -33,6 +33,11 @@ $breakpoint-desktop-lg: 1536px;
 body {
   font-family: IBMRegular, 'Open Sans', 'Helvetica', sans-serif;
   font-size: 14px;
+  margin-bottom: 128px;
+
+  @media (max-width: 420px) {
+    margin-bottom: 32px;
+  }
 }
 
 * {
@@ -71,7 +76,6 @@ a {
 
 p {
   display: block;
-  // color: #FFFFFF;
   line-height: 26px;
 }
 
@@ -128,4 +132,17 @@ span.bold {
 
 .mt-xl {
   margin-top: 128px;
+}
+
+
+.fade-in-up-enter-active,
+.fade-in-up-leave-active {
+  transition: all 600ms ease-in-out;
+  transform: translateY(0px);
+}
+
+.fade-in-up-enter,
+.fade-in-up-leave-to {
+  opacity: 0;
+  transform: translateY(32px);
 }
