@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: 800ms ease !important;
+}
+
+:root {
+  --background-color: #fff;
+  --backdrop-color: #F3F3F3;
+  --font-size: 14px;
+  --text-color: #2B334D;
+}
+@font-face {
+  font-family: IBMRegular;
+  src: url("./assets/fonts/IBMPlexSans-Regular.otf");
+}
+@font-face {
+  font-family: IBMBold;
+  src: url("./assets/fonts/IBMPlexSans-Bold.otf");
+}
+@font-face {
+  font-family: IBMMedium;
+  src: url("./assets/fonts/IBMPlexSans-Medium.otf");
+}
+@font-face {
+  font-family: IBMSemibold;
+  src: url("./assets/fonts/IBMPlexSans-SemiBold.otf");
+}
+
+::selection {
+  background-color: #5CADFF;
+  color: #003870;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'IBMRegular', 'Open Sans', sans-serif;
+  overflow-x: hidden;
+  background-color: var(--background-color);
+  background-size: 200% 200%;
+  background-position: 100% 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    background-image: linear-gradient(-219deg, #1E2436 0%, rgba(19,22,33,1) 25%, rgba(19,22,33,1) 50%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 75%, rgba(255,255,255,1) 100%);
+  }
+}
+
+body.dark {
+  background-position: 0 0;
+}
+
+span.bold {
+  font-family: 'IBMSemibold' !important;
+}
+
+span.medium {
+  font-family: 'IBMMedium' !important;
+}
+
+.to-animate {
+  opacity: 0;
+  transform: translate3d(0, 64px, 0);
+}
+
+.fade-in-up {
+  animation-duration: 600ms;
+  animation-name: fadeInUp;
+  animation-fill-mode: forwards !important;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 32px, 0);
+  }
+
+  to {
+    opacity: 1 !important;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.line-red {
+  background-color: #e27e8d;
+  box-shadow: 0 5px 4px -3px rgba(226,126,141,.5);
+}
+
+.line-yellow {
+  box-shadow: 0 5px 4px -3px hsla(35,72%,72%,.5);
+  background-color: #ebbf83;
+}
+
+.line-turq {
+  box-shadow: 0 5px 4px -3px rgba(112,225,232,.5);
+  background-color: #70e1e8;
+}
+
+.line-blue {
+  box-shadow: 0 5px 4px -3px rgba(83,154,252,.5);
+  background-color: #539afc;
+}
+
+.line-grey {
+  background-color: #b7c5d3;
+  box-shadow: 0 5px 4px -3px rgba(183,197,211,.5);
+}
