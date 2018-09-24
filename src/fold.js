@@ -122,11 +122,12 @@ const Footer = styled.div`
   left: 0;
   display: flex;
   align-items: center;
+  justify-content: flex-end;
 
   &:after { z-index: -1; }
 
   > span {
-    margin-left: auto;
+    margin-left: 16px;
 
     > a {
       color: var(--text-color);
@@ -175,13 +176,17 @@ const Footer = styled.div`
 const Line = styled.span`
   border-radius: 8px;
   height: 16px;
-  opacity: 1;
   position: absolute;
   z-index: 3;
   width: ${({ width }) => width}px;
   top: ${({ top }) => top}%;
   left: ${({ left }) => left}%;
   right: ${({ right }) => right}%;
+
+  &.l {
+    opacity: 0;
+    transform: translate3d(0, 64 px, 0);
+  }
 
   @media screen and (max-width: 767px ) {
     height: 8px;
@@ -233,7 +238,6 @@ const Toggle = styled.div`
 
 `
 
-
 const MAX_LINE_WIDTH = (window.innerWidth > 767) ? 320 : 214
 const MIN_LINE_WIDTH = window.innerWidth > 767 ? 48 : 24
 const random = (num, range = 0) => (Math.random() * num) + range
@@ -270,13 +274,14 @@ class Fold extends Component {
       })
 
       const currentHour = new Date().getHours()
-      console.log({ currentHour })
+      this.setState({
+        dark: !(currentHour > 6 && currentHour < 19)
+      }, this.toggleDarkMode)
 
-      if(currentHour > 6 && currentHour < 19) {
-        this.setState({ dark: false }, this.toggleDarkMode)
-      } else {
-        this.setState({ dark: true }, this.toggleDarkMode)
-      }
+
+      setInterval(() => {
+        this.forceUpdate()
+      }, 5000)
   }
 
   toggleDarkMode(val = this.state.dark) {
@@ -286,12 +291,12 @@ class Fold extends Component {
       set(`--background-color`, '#1E2436')
       set('--text-color', '#fff')
       set('--backdrop-color', '#1D2136')
-      document.body.classList.toggle('dark')
+      document.body.classList.add('dark')
     } else {
       set(`--background-color`, '#fff')
       set('--text-color', '#2B334D')
       set('--backdrop-color', '#F3F3F3')
-      document.body.classList.toggle('dark')
+      document.body.classList.remove('dark')
     }
   }
 
@@ -306,7 +311,7 @@ class Fold extends Component {
     const isSmall = num => (window.innerWidth > num)
 
     return (<React.Fragment>
-      {isSmall(1023) && <LineNumbers>{[...Array(Math.floor(window.innerHeight / 24))].map((_, idx) => <div key={_}>{idx + 1}</div>)}</LineNumbers>}
+      {isSmall(1023) && <LineNumbers>{[...Array(Math.floor(window.innerHeight / 24))].map((_, idx) => <div key={idx}>{idx + 1}</div>)}</LineNumbers>}
 
       <Container>
         <BackdropRectangle className="to-animate">
@@ -331,9 +336,10 @@ class Fold extends Component {
       </Social>
 
       <Footer>
+        <span><a href="https://werk.noudadrichem.com">My Work</a></span>
         <span className="light"><a href="mailto:info@noudadrichem.com">info@noudadrichem.com</a></span>
         <Toggle>
-          <input className="theme-toggle-input" checked={this.state.dark} onChange={this.handleToggle} id="theme-toggle" type="checkbox"/>
+          <input className="theme-toggle-input" checked={dark} onChange={this.handleToggle} id="theme-toggle" type="checkbox"/>
           <label className="theme-toggle-label" htmlFor="theme-toggle"></label>
         </Toggle>
       </Footer>
