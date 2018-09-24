@@ -25,6 +25,12 @@ export default {
         <br/><br/>Want to get in touch? Send me a <a href="https://twitter.com/intent/tweet?text=@noudadrichem">tweet</a> or mail me at: <span class="bold"><a href="mailto:info@noudadrichem.com">info@noudadrichem.com.</a></span>`
     },
     items: [{
+      title: 'Task management and time tracking on steroids',
+      text: 'Me and my friend <a href="https://donovanroubos.nl">Donovan Roubos</a> have been working on an open source task manager/time tracking app for free lancers. This app is able to manage your projects, track your times for each task and export it to invoices. A great side project to educate ourself',
+      img: '/blanko/skeleton.svg',
+      link: 'https://blankoapp.com',
+      show: false
+    }, {
       title: 'My internship at Yummygum',
       text: 'I did a 6 months internship at Yummygum in Amsterdam. I learned a lot and have build amazing things. We made Sketchcleaner, a plugin for sketch that keeps your files clean. And City Lights, a beautiful dark theme for Atom, Sublime & Visual Studio Code.',
       img: '/yummygum/photo.jpg',
@@ -37,13 +43,7 @@ export default {
       link: '/bannerwise',
       show: false
     }],
-    navItems: [{
-      text: 'Home',
-      link: 'https://noudadrichem.com'
-    }, {
-      text: 'Contact',
-      link: '/contact'
-    }]
+    navItems: []
   })
 }
 </script>

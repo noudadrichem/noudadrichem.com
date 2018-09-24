@@ -20,7 +20,7 @@
 
           <div class="col-5">
             <div class="img">
-              <img :src="img" alt="">
+              <img :src="img" alt="" draggable="false">
             </div>
           </div>
         </div>
@@ -33,7 +33,7 @@
         <div class="row">
           <div class="col-5">
             <div class="img">
-              <img :src="img" alt="">
+              <img :src="img" alt="" draggable="false">
             </div>
           </div>
 

@@ -37,13 +37,7 @@ export default {
       link: 'http://www.sketchcleaner.com',
       show: false
     }],
-    navItems: [{
-      text: 'Home',
-      link: 'https://noudadrichem.com'
-    }, {
-      text: 'Contact',
-      link: '/contact'
-    }]
+    navItems: []
   })
 }
 </script>

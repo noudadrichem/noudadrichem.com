@@ -1,3 +1,7 @@
-FROM nginx
-COPY /dist /usr/share/nginx/html
-EXPOSE 80
+FROM node
+WORKDIR /app
+COPY . /app
+RUN npm install
+RUN npm run build
+CMD ["npm", "start"]
+EXPOSE 3000

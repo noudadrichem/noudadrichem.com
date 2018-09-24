@@ -35,13 +35,7 @@ export default {
       img: '/bannerwise/ebook-page/ebookpage.png',
       show: false
     }],
-    navItems: [{
-      text: 'Home',
-      link: 'https://noudadrichem.com'
-    }, {
-      text: 'Contact',
-      link: '/contact'
-    }]
+    navItems: []
   })
 }
 </script>
