@@ -2,7 +2,7 @@
   "name": "porto-3",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://noudadrichem.com/mmm",
+  "homepage": "https://noudadrichem.com/",
   "dependencies": {
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
