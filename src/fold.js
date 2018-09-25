@@ -336,8 +336,8 @@ class Fold extends Component {
       </Social>
 
       <Footer>
-        <span><a href="https://werk.noudadrichem.com">My Work</a></span>
-        <span className="light"><a href="mailto:info@noudadrichem.com">info@noudadrichem.com</a></span>
+        <span><a href="https://werk.noudadrichem.com">{ isSmall(767) && 'My' } Work </a></span >
+        <span className="light"><a href="mailto:info@noudadrichem.com" >{ isSmall(767) ? 'info@noudadrichem.com' : 'Contact' }</a></span >
         <Toggle>
           <input className="theme-toggle-input" checked={dark} onChange={this.handleToggle} id="theme-toggle" type="checkbox"/>
           <label className="theme-toggle-label" htmlFor="theme-toggle"></label>
