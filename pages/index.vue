@@ -28,7 +28,7 @@ export default {
       title: 'Task management and time tracking on steroids',
       text: 'Me and my friend <a href="https://donovanroubos.nl">Donovan Roubos</a> have been working on an open source task manager/time tracking app for free lancers. This app is able to manage your projects, track your times for each task and export it to invoices. A great side project to educate ourself',
       img: '/blanko/skeleton.svg',
-      link: 'https://blankoapp.com',
+      link: 'https://github.com/blankoo',
       show: false
     }, {
       title: 'My internship at Yummygum',
